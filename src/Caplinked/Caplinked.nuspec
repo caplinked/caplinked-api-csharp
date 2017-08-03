@@ -6,7 +6,7 @@
         <title>Caplinked API SDK NET</title>
 
         <!-- The package version number that is used when resolving dependencies -->
-        <version>$version$</version>
+        <version>1.1.0</version>
 
         <!-- Authors contain text that appears directly on the gallery -->
         <authors>$author$</authors>
