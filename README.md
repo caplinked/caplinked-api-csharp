@@ -67,25 +67,23 @@ namespace Example
     {
         public void main()
         {
+            var apiInstance = new UsersApi();
+            apiInstance.Configuration.SetApiPublicKey("0c1da72601ca7c39df77a317d93c1caefccdd216");
+            apiInstance.Configuration.SetApiSecretKey("cad02b1a2593862c5f151a5b8496f6e60c8581c82697ad706d8930bbd5684ba3");
+            apiInstance.Configuration.SetApiUserToken("1b62543ca4f8311e9bd0e628705d76fb6aca1bd9");
 
-            var apiInstance = new ActivitiesApi();
-            var workspaceId = 56;  // int? | ID of the workspace
-            var page = 56;  // int? | Page number of results (optional)  (default to 1)
-            var perPage = 56;  // int? | Per page number of results. Options: 25, 50, 75, 100 (optional)  (default to 100)
-            var userId = 56;  // int? | ID of the user  (optional) 
-
-            try
-            {
-                // Get workspace activities
-                Activity result = apiInstance.GetActivitiesWorkspaceWorkspaceId(workspaceId, page, perPage, userId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ActivitiesApi.GetActivitiesWorkspaceWorkspaceId: " + e.Message );
-            }
-
-        }
+	    try
+	    {
+	        // Get info of user resource token
+                Console.WriteLine("Fetching user info");
+		User result = apiInstance.GetUsersMe();
+		Console.WriteLine(result.FirstName);
+	    }
+	    catch (Exception e)
+	    {
+		Console.WriteLine("Exception when calling UsersApi.GetUsersMe: " + e.Message);
+	    }
+	}
     }
 }
 ```
@@ -192,4 +190,4 @@ Class | Method | HTTP request | Description
 <a name="documentation-for-authorization"></a>
 ## Documentation for Authorization
 
-All endpoints do not require authorization.
+See example on [Getting Started](#getting-started)
