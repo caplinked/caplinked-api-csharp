@@ -68,22 +68,22 @@ namespace Example
         public void main()
         {
             var apiInstance = new UsersApi();
-            apiInstance.Configuration.SetApiPublicKey("0c1da72601ca7c39df77a317d93c1caefccxxxxx");
-            apiInstance.Configuration.SetApiSecretKey("cad02b1a2593862c5f151a5b8496f6e60c8581c82697ad706d8930bbd56xxxxx");
-            apiInstance.Configuration.SetApiUserToken("1b62543ca4f8311e9bd0e628705d76fb6acxxxxx");
+            apiInstance.Configuration.SetApiPublicKey("0c1da72601ca7c39df77a317d93c1caefccdd216");
+            apiInstance.Configuration.SetApiSecretKey("cad02b1a2593862c5f151a5b8496f6e60c8581c82697ad706d8930bbd5684ba3");
+            apiInstance.Configuration.SetApiUserToken("1b62543ca4f8311e9bd0e628705d76fb6aca1bd9");
 
-			try
-			{
-				// Get info of user resource token
+	    try
+	    {
+	        // Get info of user resource token
                 Console.WriteLine("Fetching user info");
-				User result = apiInstance.GetUsersMe();
-			    Console.WriteLine(result.FirstName);
-			}
-			catch (Exception e)
-			{
-				Console.WriteLine("Exception when calling UsersApi.GetUsersMe: " + e.Message);
-			}
-        }
+		User result = apiInstance.GetUsersMe();
+		Console.WriteLine(result.FirstName);
+	    }
+	    catch (Exception e)
+	    {
+		Console.WriteLine("Exception when calling UsersApi.GetUsersMe: " + e.Message);
+	    }
+	}
     }
 }
 ```
