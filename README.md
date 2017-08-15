@@ -4,7 +4,7 @@
 
 This is a C# (C sharp /.NET) SDK for the [Caplinked API](https://developer.caplinked.com/).
 
-Core information security endpoints for managing your virtual data room capabilities around files/folders, users/groups, uploads/downloads, and more.
+Core information security endpoints for managing your virtual data room capabilities around files/folders, users/groups and permissions, uploads/downloads, dynamic watermarking, DRM (digital rights management) and more.
 
 Vist [Caplinked](https://www.caplinked.com/data-protection-api/) for more information.
 
